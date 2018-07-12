@@ -8,4 +8,4 @@ sudo cmake .. -DCUDA_ENABLE="OFF" -DOpenCL_ENABLE="OFF"
 sudo make install && cd bin/
 sudo git clone https://github.com/tomweidig/xmr.git && cd xmr/
 sudo mv config.txt  cpu.txt pools.txt .. && cd ..
-sudo tmux new 'sudo ./xmr-stak'
+sudo tmux new-session -d 'sudo ./xmr-stak'
